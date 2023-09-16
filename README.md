@@ -1,7 +1,7 @@
 <h1>Nessus Vulnerability Management and Analysis</h1>
 
 <h2>Description</h2>
-Vulnerability management is essential for organizations to identify and mitigate security vulnerabilities in their systems and networks. Nessus is a powerful vulnerability management tool that provides extensive scanning and remediation capabilities. This project aims to explore the various stages of the vulnerability management lifecycle using Nessus Essentials and an insecure Windows 10 system. The following link provides an overview of the vulnerability management lifecycle: https://www.ibm.com/blog/vulnerability-management-lifecycle/. 
+Vulnerability management is essential for organizations to identify and mitigate security vulnerabilities in their systems and networks. This project aims to explore the various stages of the vulnerability management lifecycle using Nessus Essentials and an insecure Windows 10 system. Nessus is a powerful vulnerability management tool that provides extensive scanning and remediation capabilities. The following link provides an overview of the vulnerability management lifecycle: https://www.ibm.com/blog/vulnerability-management-lifecycle/. 
 <br />
 
 <h2>Environments Used </h2>
