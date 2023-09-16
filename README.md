@@ -1,19 +1,14 @@
-<h1>SHA-256 File Integrity Checker in Python</h1>
+<h1>Nessus Vulnerability Management and Analysis</h1>
 
 <h2>Description</h2>
 File integrity checks are essential when downloading files to ensure that data has not been tampered with, and to prevent the execution of malicious payloads. This program automates file integrity checks using the SHA-256 hashing algorithm, a robust algorithm that is resistant to collision attacks. For more information on implementing secure hashing algorithms, please refer to the following link: https://csrc.nist.gov/Projects/Hash-Functions/NIST-Policy-on-Hash-Functions. 
 <br />
 
-
-<h2>Languages and Utilities Used</h2>
-
-- <b>Python</b>
-- <b>Hashlib</b>
-
 <h2>Environments Used </h2>
 
 - <b>Windows 10</b>
-- <b>Visual Studio Code</b>
+- <b>Oracle VM VirtualBox</b>
+- <b>Nessus Essentials Vulnerability Scanner</b>
 
 <h2>Program walk-through:</h2>
 
