@@ -17,14 +17,16 @@ The Nessus scan will be run on a Windows 10 virtual machine from our host machin
  <br/>
  <br/>
 <img src="https://i.imgur.com/dn9QytA.png" height="35%" width="35%" alt="Install Nessus"/>
-<br />
-<br />
-The first function 'hash_calc' takes the argument 'fname', which represents the name of the file that we will be checking. Next, the file is opened and read in binary mode ('rb'), and stored into the variable 'bytes'. Line 7 follows the 'hashlib' syntax 'hash.hexdigest()', which returns a hash of the file as a string object. As a result, this function calculates and returns the SHA-256 hash of a file, and will be called later in the script.   
+<h2>Uncredentialed scan:</h2> 
+<p align="center">
+Prior to running the first scan, it is important to verify that the host machine can connect to the virtual machine. In the Windows 10 virtual machine, navigate to the command line and use the 'ipconfig' command to gather the IPv4 address of the system. With this IPv4 address, navigate to the command line of the host machine and type in the command 'ping x.x.x.x,' where 'x.x.x.x' is the IPv4 address of the virtual machine. If the host machine is not able to ping the target machine, navigate to the Windows Defender Firewall (wf.msc) and make the appropriate firewall state configuration changes.
 <br/>
 <br/>
-<img src="https://i.imgur.com/yPNYZSX.png" height="65%" width="65%" alt="Hash Calculator"/>
+In Nessus, click 'New Scan,' then 'Basic Network Scan,' and provide a name for the scan as well as the virtual machine's IPv4 address in the 'Targets' category. Once the scan is saved, click the 'Launch' icon to begin the scan. The image below depicts the results of the first scan. The vulnerabilities discovered by the scan are primarily in the 'Info' severity, with one being in the 'Medium' severity. To read more about the severity levels assigned by Tenable, refer to the following link: https://docs.tenable.com/nessus/Content/RiskMetrics.htm. Without the use of privileged credentials, the scan is not able to go in-depth and find many vulnerabilities. Therefore, the next step is to perform a credentialed scan. 
 <br />
 <br />
+<img src="https://i.imgur.com/VO6juwB.png" height="55%" width="55%" alt="Uncredentialed Scan"/> 
+<h2>Credentialed scan:</h2> 
 The next function 'file_check' takes the argument 'fname' again, as well as 'valid_hash' argument, which represents the expected SHA-256 hash value of the file. For example, if I am downloading a software from a vendor that provides the SHA-256 hash of the download file, I would then use the hash value provided by the vendor as the 'valid_hash' value. 
  <br/>
  <br/>
