@@ -1,7 +1,7 @@
 <h1>Nessus Vulnerability Management and Analysis</h1>
 
 <h2>Description</h2>
-Vulnerability management is essential for organizations to identify and mitigate security vulnerabilities in their systems and networks. This project aims to explore the various stages of the vulnerability management lifecycle using Nessus Essentials and an insecure Windows 10 system. Nessus is a powerful vulnerability management tool that provides extensive scanning and remediation capabilities. The following link provides an overview of the vulnerability management lifecycle: https://www.ibm.com/blog/vulnerability-management-lifecycle/. 
+Vulnerability management is essential for organizations to identify and mitigate security vulnerabilities in their systems and networks. This project aims to explore the various stages of the vulnerability management lifecycle using Nessus Essentials and an insecure Windows 10 system. Nessus is a powerful tool that provides extensive scanning and remediation capabilities for vulnerability management. The following link provides an overview of the vulnerability management lifecycle: https://www.ibm.com/blog/vulnerability-management-lifecycle/. 
 <br />
 
 <h2>Environments Used </h2>
@@ -10,13 +10,13 @@ Vulnerability management is essential for organizations to identify and mitigate
 - <b>Oracle VM VirtualBox</b>
 - <b>Nessus Essentials Vulnerability Scanner</b>
 
-<h2>Program walk-through:</h2>
+<h2>Prerequisites:</h2> 
 
 <p align="center">
-Begin by importing the 'hashlib' module, a widely-recognized Python module used for cryptographic hashing. This module includes a wide range of secure hash and message digest algorithms. The following link contains extensive documentation on the 'hashlib' module: https://docs.python.org/3/library/hashlib.html
+The Nessus scan will be run on a Windows 10 virtual machine from our host machine. In this analysis the virtual machine will be created using Oracle VirtualBox, however any hypervisor can be used. The download links and instructions are provided as follows:<br /><br />Download Oracle VirtualBox: https://www.virtualbox.org/wiki/Downloads<br />Download Windows 10 Disc Image (ISO File): https://www.microsoft.com/en-us/software-download/windows10<br />Download Nessus Essentials: https://www.tenable.com/products/nessus/nessus-essentials
  <br/>
  <br/>
-<img src="https://i.imgur.com/o3MrBNP.png" height="30%" width="30%" alt="Import Module"/>
+<img src="https://i.imgur.com/dn9QytA.png" height="35%" width="35%" alt="Install Nessus"/>
 <br />
 <br />
 The first function 'hash_calc' takes the argument 'fname', which represents the name of the file that we will be checking. Next, the file is opened and read in binary mode ('rb'), and stored into the variable 'bytes'. Line 7 follows the 'hashlib' syntax 'hash.hexdigest()', which returns a hash of the file as a string object. As a result, this function calculates and returns the SHA-256 hash of a file, and will be called later in the script.   
