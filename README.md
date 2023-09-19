@@ -135,6 +135,35 @@ Rather than having 5 'Medium' level vulnerabilities as in the previous scan, the
 <br />
 <img src="https://i.imgur.com/cVK2O89.png" height="35%" width="35%" alt="Update Scan Results"/>     <img src="https://i.imgur.com/229wO2C.png" height="35%" width="35%" alt="Remediation Scan Results"/>
 <h2>Key takeaways:</h2>
+ Credentialed scans are essential for identifying vulnerabilities in a system, as they allow Nessus to access and scan all parts of the system, including system files, registry entries, and application settings. This results in a more comprehensive and accurate assessment of the system's vulnerabilities.
+<br/>
+<br/>
+Deprecated software is a major source of vulnerabilities, making it crucial to keep all software up to date, including your operating system, browsers, and applications. Deprecated software often contains known security vulnerabilities that have been addressed in newer versions. While vulnerability remediation does often involve applying patches and updating software, it may also require changing system configurations. Nessus scans can be used to identify these vulnerabilities and remediate them. 
+<br/>
+<br/>
+Regularly scanning your systems on an ongoing basis is also crucial to address any new vulnerabilities that may appear. The vulnerability management lifecycle is a powerful tool used to ensure that vulnerabilities are addressed continuously: 
+<br/>
+<br/>
+In the planning stage of vulnerability management (Stage 0), any stakeholders and/or resources that will be involved should be identified. Guidelines and metrics outlining any goals or expectations should also be provided. In this project, the target system was a Windows 10 virtual machine, and the goal was to gain an overview of how vulnerability management works. 
+<br/>
+<br/>
+In this project, the target system was a Windows 10 virtual machine, and the goal was to understand how various configuration changes to both the Windows 10 machine and Nessus can result in varying scan results. Another goal was to explore different vulnerability remediation techniques.
+<br/>
+<br/>
+In the asset discovery phase (Stage 1), an inventory of all hardware and software assets should be created and/or updated regularly. It is common to use specialized solutions for asset management. This stage also involves scanning the assets for vulnerabilities. In this project, the primary asset was the Windows 10 virtual machine, and Nessus Essentials was used as the vulnerability scanner. 
+<br/>
+<br/>
+Stage 2 of the vulnerability management lifecycle is vulnerability prioritization, where the vulnerabilities discovered in Stage 1 are prioritized based on their severity level. This stage focuses on maximizing efficiency. The prioritization is often based on threat intelligence sources such as CVE or CVSS, and may also be based upon how critical the particular asset is, and how likely it is to be exploited. In this project, the prioritization was primarily based on the severity levels provided by Nessus Essentials. 
+<br/>
+<br/>
+Stage 3 involves vulnerability resolution, which involves remediation, mitigation, or acceptance. Remediation may involve patching software or making changes to system configurations, and essentially removing the vulnerability from the system entirely. Mitigation either lessens the severity of the vulnerability or makes it more challenging to exploit, but does not remove it from the system. For vulnerabilities that are less severe or not as high of a priority, they may just be accepted rather than being remediated or mitigated. This project focused on remediation primarily, however it is still crucial to understand mitigation and acceptance when working on larger scale systems in an organization. 
+<br/>
+<br/>
+Stage 4, or the verification and monitoring phase, involves scanning the systems again to ensure that their remediation and mitigation efforts were effective. This is also to ensure that there were no new vulnerabilities created while making any changes to the system. 
+<br/>
+<br/>
+The final stage, reporting and improvement (Stage 5), involves documenting the vulnerabilities that were found, as well as their outcomes. This stage focuses on the most recent scans and actions taken in the life cycle, as vulnerability management is an ongoing process. It is very important to have clear, up-to-date, and comprehensive documentation, particularly when working with stakeholders.
+
 <p align="center">
 <!--
  ```diff
