@@ -49,7 +49,7 @@ In Nessus, select the previous scan that was created, click 'More,' and then 'Co
  <img src="https://i.imgur.com/AFDXeDE.png" height="60%" width="60%" alt="Credentialed Scan Detailed Results"/>
   <br/>
  <br/>
-In the previous uncredentialed scan, the highest severity was 'Medium,' with only 1 vulnerability in this category. In this credentialed scan, there are 7 'Medium' level vulnerabilities, 34 'High,' and 8 'Critical' vulnerabilities. These results further highlight the significance of credentialed scans. The two images below are a direct comparison of the results of the uncredentialed scan (left) and the credentialed scan (right). 
+In the previous uncredentialed scan, the highest severity was 'Medium,' with only 1 vulnerability in this category. In this credentialed scan, there are 7 'Medium' level vulnerabilities, 34 'High,' and 8 'Critical' vulnerabilities. These results further highlight the significance of performing credentialed scans. The two images below are a direct comparison of the results of the uncredentialed scan (left) and the credentialed scan (right). 
  <br/>
  <br/>
  <img src="https://i.imgur.com/25bx2Ph.png" height="30%" width="30%" alt="Uncredentialed Scan Results"/>     <img src="https://i.imgur.com/WjAcm6L.png" height="30%" width="30%" alt="Credentialed Scan Results"/>
@@ -64,13 +64,13 @@ For further analysis, I have downloaded a deprecated version of Firefox on the W
  <img src="https://i.imgur.com/KLqflvy.png" height="50%" width="50%" alt="Credentialed Scan Detailed Results w/ Firefox"/>
   <br/>
  <br/>
-Rather than having 7 'Medium' level vulnerabilities as in the first credentialed scan, there are now 23. The 'High' severity vulnerabilities increased from 34 to 108, and the 'Critical' level vulnerabilities increased from 8 to 86. These scan results highlight the importance of ensuring that all third-party software are fully patched and up-to-date. Depicted below is a comparison of the first credentialed scan (left) to the second credentialed scan with the deprecated version of Firefox installed (right):"
+Rather than having 7 'Medium' level vulnerabilities as in the first credentialed scan, there are now 23. The 'High' severity vulnerabilities increased from 34 to 108, and the 'Critical' level vulnerabilities increased from 8 to 86. These scan results emphasize the importance of ensuring that all third-party software are fully patched and up-to-date. Depicted below is a comparison of the first credentialed scan (left) to the second credentialed scan with the deprecated version of Firefox installed (right):
  <br/>
  <br/>
  <img src="https://i.imgur.com/WjAcm6L.png" height="30%" width="30%" alt="Credentialed Scan Results"/>     <img src="https://i.imgur.com/FcqpzOC.png" height="30%" width="30%" alt="Credentialed Scan Results w/ Firefox"/>
 <h2>Remediation:</h2> 
  <p align="center">
-Prior to running a vulnerability scan, it is essential to ensure that both the operating system and all third-party software are fully up-to-date. This will significantly reduce the number of vulnerabilities present in the scan results and allow the analyst to have more efficient vulnerability management. To further maximize efficiency, setting up automatic updates on your operating system and third-party software is very beneficial.
+Prior to running a vulnerability scan, it is essential to ensure that both the operating system and all third-party software are fully up-to-date. This will significantly reduce the number of vulnerabilities present in the scan results and will allow the analyst to have more efficient vulnerability management. To further maximize efficiency, be sure to set up automatic updates on your operating system and third-party software.
  <br/>
  <br/>
 <img src="https://i.imgur.com/aMYixCT.png" height="60%" width="60%" alt="Uninstall Firefox"/>
