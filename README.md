@@ -17,7 +17,7 @@ The Nessus scan will be run on a Windows 10 virtual machine from our host machin
  <br/>
  <br/>
 <img src="https://i.imgur.com/dn9QytA.png" height="35%" width="35%" alt="Install Nessus"/>
-<h2>Uncredentialed scan:</h2> 
+<h2>Uncredentialed Scan:</h2> 
 <p align="center">
 Prior to running the first scan, it is important to verify that the host machine can connect to the virtual machine. In the Windows 10 virtual machine, navigate to the command line and use the 'ipconfig' command to gather the IPv4 address of the system. With this IPv4 address, navigate to the command line of the host machine and type in the command 'ping x.x.x.x,' where 'x.x.x.x' is the IPv4 address of the virtual machine. If the host machine is not able to ping the target machine, navigate to the Windows Defender Firewall (wf.msc) and make the appropriate firewall state configuration changes.
 <br/>
@@ -29,7 +29,7 @@ In Nessus, click 'New Scan,' then 'Basic Network Scan,' and provide a name for t
 <br />
 <br />
 <img src="https://i.imgur.com/00b4WGs.png" height="60%" width="60%" alt="Uncredentialed Scan"/> 
-<h2>Credentialed scan:</h2> 
+<h2>Credentialed Scan:</h2> 
  <p align="center">
 In order to run a credentialed scan, the virtual machine must be configured to accept authenticated scans. The following link provided by Tenable describes how to configure the virtual machine for credentialed scans: https://community.tenable.com/s/article/Scanning-with-non-default-Windows-Administrator-Account?language=en_US. Some of the steps include enabling 'Remote Registry' and ensuring that 'File and Printer Sharing' is turned on in 'Advanced Sharing Settings.'
  <br/>
